@@ -21,7 +21,7 @@ spring:
     name: order-service
   data:
     mongodb:
-      uri: mongodb+srv://admin:phambaophuc@mydb.t3eg6sl.mongodb.net/fast_food_express_db
+      uri: mongodb+srv://admin:phambaophuc@mydb.t3eg6sl.mongodb.net/fast_food_express_db?directConnection=true
   config:
     import: 'optional:configserver:'
 #  profiles:
