@@ -11,7 +11,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 @OpenAPIDefinition(info =
 @Info(title = "Order API", version = "${springdoc.version}", description = "Documentation Order API v1.0"),
-        servers = @Server(url = "http://localhost:8765/order-service")
+        servers = @Server(url = "${gateway.url}")
 )
 public class OrderServiceApplication {
 
